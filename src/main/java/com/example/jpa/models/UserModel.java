@@ -8,10 +8,10 @@ import jakarta.persistence.*;
 
 @Entity
 public class UserModel implements Serializable{
-
     private static final Long serialVersionUID = 1L;
 
     @Id
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     @Column(nullable = false)
     private Integer id;
     
